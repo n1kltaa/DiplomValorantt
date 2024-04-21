@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>VALORANT</title>
+
+    <link rel="icon" type="images/x-icon" href="favicons/favicon_1.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-valorant"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="white"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M14.5 14h4.5l2 -2v-6z" />
+            <path d="M9 19h5l-11 -13v6z" />
+          </svg>
+        </a>
+      </div>
+      <div class="header_container">
+        <div class="nav">
+          <a class="nav-text" href="#novosti">Последние обновления</a>
+          <a class="nav-text" href="#agent">Персонажи</a>
+          <a class="nav-text" href="#maps">Карты</a>
+          <a class="nav-text" href="#weapon">Оружие</a>
+        </div>
+      </div>
+
+      <div class="right-nav">
+        <div class="language">
+          <div class="mini-window" id="miniWindow">
+            <a class="language_link active" href="main.html"> Русский </a>
+            <a class="language_link" href="eng_file/main_eng.html">English</a>
+            <a class="language_link" href="ukr_file/main_ukr.html"
+              >Українська</a
+            >
+            <a class="language_link" href="spain_file/esp_main.html">Español</a>
+            <a class="language_link" href="french_file/fra_main.html"
+              >Français</a
+            >
+            <a class="language_link" href="chinese_file/chi_main.html">中文</a>
+            <a class="language_link" href="polish_file/pol_main.html">Polski</a>
+            <!-- Додайте інші мови, які вам необхідні -->
+          </div>
+          <button class="language_logo" id="languageLogo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-language"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="white"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 5h7" />
+              <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+              <path d="M5 9c0 2.144 2.952 3.908 6.7 4" />
+              <path d="M12 20l4 -9l4 9" />
+              <path d="M19.1 18h-6.2" />
+            </svg>
+          </button>
+        </div>
+        <div class="profile">
+          <div class="mini-window-profile" id="miniWindowProfile">
+            <a class="nav-text avt" href="authorisation/authorisation.php"
+              >Вход</a
+            >
+            <a class="nav-text reg" href="registration/registration.html"
+              >Регистрация</a
+            >
+          </div>
+
+          <button class="profile_logo" id="profileLogo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-user-circle"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="white"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+              <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path
+                d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <button class="burger" type="button">
+        <span></span>
+      </button>
+    </header>
+
+    <section class="section" style="background-image: url(img/fon11.png)">
+      <div class="intro" style="background-image: url(img/fon_main.png)">
+        <div class="container">
+          <div class="intro__wrapper">
+            <div class="intro__block">
+              <p class="intro__text">Тактический шутер с матчами 5 на 5</p>
+              <div class="intro__title">vALORanT</div>
+              <div class="intro__actions">
+                <a
+                  class="btn btn-main"
+                  href="img/VALORANT.txt"
+                  download="Valorant"
+                  >Играть сейчас</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="novosti">
+      <div class="containerr" style="background-image: url(img/agent_fon.png)">
+        <div id="novosti" class="novosti_zagolovok">
+          <h2 class="block_title">Новости и обновления</h2>
+          <div class="novosti_link">
+            <a class="link_link" href="novosti/novosti.html"
+              >Перейти на страницу с новостями</a
+            >
+            <a class="ikon" href="novosti/novosti.html"
+              ><svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="#ff4655"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="novosti_wrapper">
+          <div class="novosti_block">
+            <a href="novosti/novosti.html">
+              <img
+                class="image_block"
+                src="img/novost_clove1.jpg"
+                alt="image"
+              />
+              <div class="text_block">
+                <p class="data_title">24.03.24</p>
+                <h3 class="novost_title">
+                  Официальный анонс игрового процесса Clove // VALORANT
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="novosti_block2">
+            <a href="novosti/novosti.html">
+              <img
+                class="image_block"
+                src="img/novost_clove2.jpg"
+                alt="image"
+              />
+              <div class="text_block">
+                <p class="data_title">24.03.24</p>
+                <h3 class="novost_title">Смерть это только начало - Clove</h3>
+              </div>
+            </a>
+          </div>
+          <div class="novosti_block3">
+            <a href="novosti/novosti.html">
+              <img
+                class="image_block"
+                src="img/novost_clove3.jpg"
+                alt="image"
+              />
+              <div class="text_block">
+                <p class="data_title">24.03.24</p>
+                <h3 class="novost_title">Трейлер агента Clove - valorant</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="osnovu_section"
+      style="background-image: url(img/text_fon.png)"
+    >
+      <div class="container">
+        <div class="osnovu">
+          <div class="osnovu_wrapper">
+            <div class="osnovu_block">
+              <div class="text_glavniy"><h3>Основы игры - Valorant</h3></div>
+              <div class="osnobvu_glavniy_text">
+                <div class="text_secondary">
+                  <h3>об игре</h3>
+                  <p>
+                    Погрузитесь в свой неповторимый стиль игры и проверьте свои
+                    навыки на мировой арене соревнований. Вас ждет напряженная
+                    борьба в течение 13 раундов, где вы чередуетесь между ролями
+                    атакующего и защитника. Воспользуйтесь всем арсеналом оружия
+                    и тактических приемов. Каждый раунд — это одно ответственное
+                    решение, где ваша жизнь на кону. Чтобы выжить, необходимо
+                    думать быстрее оппонента и использовать все возможные
+                    стратегии. Сражайтесь против соперников в рейтинговых
+                    матчах, в неофициальных играх, в режиме "Бой насмерть" или в
+                    захватывающем режиме "Быстрая установка Spike". Создайте
+                    свой уникальный стиль игры и завоюйте вершину в
+                    ультимативных вызовах Valorant!
+                  </p>
+                </div>
+                <div class="osnovu_actions">
+                  <a
+                    class="btn btn-secondary"
+                    href="osnovu/osnovu_valorant.html"
+                    >Узнать подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://youtu.be/hNoQ0sQZkjQ?si=UfIXelQn7a_XWpxY"
+              target="_blank"
+            >
+              <div class="osnovu_image">
+                <video src="osnovu.mp4" autoplay muted loop></video>
+                <div class="video_hover">
+                  <p>
+                    Понимание основ игры Valorant является краеугольным камнем
+                    успеха
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="text_wrapper">
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+          <p class="moving_text">ОСНОВЫ VALORANT</p>
+
+          <!-- Добавьте больше текста здесь -->
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="agent"
+      class="agent"
+      style="background-image: url(img/fon_agent.jpg)"
+    >
+      <div class="containerrr">
+        <div class="agent_wrapper">
+          <div class="agent_text">
+            <h2 class="agent_zogolovok_title">Персонажи</h2>
+            <p>
+              Это не просто игра со стрельбой. Вам на выбор предлагаются агенты,
+              вооруженные различными смертоносными умениями, с помощью которых
+              любое оружие в ваших руках заиграет новыми красками. У каждого
+              агента уникальный игровой процесс – двух одинаковых не найти.
+              Создайте что-то особенное. Поменяйте игру, добавьте свой
+              собственный характер и сделайте каждый момент уникальным. В
+              Valorant каждый агент — это творец, а каждая игра — это
+              художественное произведение, созданное вашей креативностью.
+            </p>
+            <div class="agent_actions">
+              <a class="btn btn-third" href="agent/agent.html"
+                >Посмотреть всех</a
+              >
+            </div>
+          </div>
+          <div class="agent_image">
+            <img src="img/agent_fon2.png" alt="Agent" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="maps"
+      class="maps"
+      style="background-image: url(img/maps_fon2.jpg)"
+    >
+      <div class="container">
+        <div class="maps_wrapper">
+          <div class="maps_text">
+            <h2 class="maps_zogolovok_title">Карты</h2>
+            <div class="maps_text_secondary">
+              <p>
+                Это не просто игра в стрельбу. Здесь вам доступны агенты,
+                обладающие разнообразными и смертоносными способностями, которые
+                придают новые возможности каждому виду оружия в ваших руках.
+                Каждый агент предоставляет уникальный игровой опыт, и найти двух
+                абсолютно одинаковых агентов просто невозможно.
+              </p>
+              <div class="maps_actions">
+                <a class="btn btn-four" href="maps/maps.html">Посмотреть все</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="weapon" style="background-image: url(img/text_fon.png)">
+      <div class="container">
+        <div id="weapon" class="weapon_wrapper">
+          <div class="weapon_text">
+            <h2 class="weapon_zagolovok_title">Оружие</h2>
+            <p>
+              Каждая карта - это площадка для выражения вашего неповторимого
+              стиля игры. Здесь разворачиваются командные стратегии, появляются
+              неожиданные моменты и захватывающие клатчи. Именно для таких
+              случаев созданы эти карты. Делайте так, чтобы ваша игровая манера
+              была копирована многими годами.
+            </p>
+            <div class="weapon_actions">
+              <a class="btn btn-secondary" href="weapon/weapon.html"
+                >Посмотреть все</a
+              >
+            </div>
+          </div>
+          <div class="weapon_weapon2">
+            <img class="weapon_sheriff" src="img/sheriff.png" />
+            <img class="weapon_ghost" src="img/ghost.png" />
+            <img class="weapon_shorty" src="img/Shorty_SideView.png" />
+            <img class="weapon_stinger" src="img/stinger.png" />
+            <img class="weapon_marshal" src="img/marshal.png" />
+          </div>
+          <div class="weapon_weapon">
+            <img class="weapon_spectre" src="img/spectre.png" />
+            <img class="weapon_bulldog" src="img/bulldog.png" />
+            <img class="weapon_bucky" src="img/bucky.png" />
+            <img class="weapon_vandal" src="img/vandal.png" />
+            <img class="weapon_operator" src="img/operator.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_block">
+            <a class="logo_footer" href="main.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-valorant"
+                width="45"
+                height="45"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="white"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14.5 14h4.5l2 -2v-6z" />
+                <path d="M9 19h5l-11 -13v6z" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer_block">
+            <nav class="nav nav-footer">
+              <a class="nav-text" href="novosti/novosti.html"
+                >Последние обновления</a
+              >
+              <a class="nav-text" href="agent/agent.html">Персонажи</a>
+              <a class="nav-text" href="maps/maps.html">Карты</a>
+              <a class="nav-text" href="weapon/weapon.html">Оружие</a>
+              <a class="nav-text" href="authorisation/authorisation.html"
+                >Войти</a
+              >
+              <a class="nav-text" href="registration/registration.html"
+                >Регистрация</a
+              >
+            </nav>
+          </div>
+          <div class="footer_block"></div>
+        </div>
+        <div class="footer_block_copyright">
+          <p>© 2024</p>
+          <p>Андриенко Никита</p>
+
+          <div class="footer_block_text">
+            <p>
+              Страница по игре Valorant, оригинальный сайт защищен <br />
+              и этот сайт не пытается быть основным, <br />
+              это всего лишь свое видение сайта, и дипломный проект ученика.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/reg.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

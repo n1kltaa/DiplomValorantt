@@ -1,0 +1,1774 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e4ded6;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link_vuxod {
+  color: #111;
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 7px; /* Ширина скроллбара */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #111; /* Колір кнопки при наведенні */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #111; /* Колір кнопки */
+  border-radius: 7px; /* Радіус кнопки */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ece8e1; /* Колір треку */
+  border: 1px solid #ccc;
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #111; /* Колір крайніх кінців */
+}
+
+body::-webkit-scrollbar-thumb:vertical {
+  height: 90px; /* Висота вертикальної кнопки */
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0; /* Встановлення радіусу кутів на нуль */
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 0; /* Встановлення радіусу кутів на нуль */
+}
+
+.burger {
+  display: none;
+}
+
+.header {
+  height: 70px;
+  background-color: #111;
+  padding-left: 35px;
+  padding-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.containerr {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.header_container {
+  margin: 0 auto;
+  width: 65%;
+  overflow: hidden;
+  position: relative;
+}
+
+.containerrr {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-text {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 12px;
+  transition: 0.4s linear;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-left: 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  transition: stroke 0.3s;
+}
+
+.logo:hover .icon {
+  stroke: #ff4655;
+}
+
+.avt,
+.reg {
+  color: #111;
+}
+
+.nav-text:hover {
+  color: #ff4655;
+}
+
+.right-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.language {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 0.1s linear;
+  padding: 5px 2px;
+}
+
+.language:hover {
+  background-color: #2c2c2c;
+  border-radius: 4px;
+}
+
+.mini-window {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -80px;
+  width: 130px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 4;
+  border-radius: 6px;
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+}
+
+.mini-window.active {
+  display: block;
+}
+
+.profile {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 0.1s linear;
+  padding: 5px 2px;
+}
+
+.profile:hover {
+  background-color: #2c2c2c;
+  border-radius: 4px;
+}
+
+.mini-window-profile {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  width: auto;
+
+  padding: 10px;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 4;
+  border-radius: 6px;
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+}
+
+.mini-window-profile.active {
+  display: block;
+}
+
+.exit {
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  padding: 0;
+  padding-right: 15px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.exit:hover {
+  background-color: #c1c1c1;
+}
+
+.username a:hover {
+  color: #ff4655;
+}
+
+.active {
+  opacity: 1;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.language_link {
+  align-items: center;
+  display: block;
+  padding: 5px;
+  color: #9e9797;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.language_link.active {
+  color: #ff4655;
+}
+
+.language_link:hover {
+  color: #1f1e1e;
+}
+
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 50;
+}
+
+.intro {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 7%;
+  width: 10%;
+  border: none;
+  background-color: #e4ded6;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 7%;
+  width: 10%;
+  background-color: #e4ded6;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.intro__wrapper {
+  height: auto;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.intro__block {
+  max-width: 665px;
+  opacity: 0; /* Начальная непрозрачность элемента */
+  transform: translateY(-150px); /* Начальное смещение элемента вниз */
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.intro__block.appear {
+  opacity: 1; /* Устанавливаем полную непрозрачность элемента */
+  transform: translateY(0);
+}
+
+@font-face {
+  font-family: "Valorant";
+  src: url(valorant/Valorant.ttf);
+}
+
+.intro__title {
+  font-family: Valorant; /* Гарнитура шрифта */
+  src: url(valorant/Valorant.eof); /* Для IE5-8 */
+  src: local(valorant), url(); /* Для остальных браузеров */
+  font-size: 130px;
+  margin: 0 0 35px;
+  padding: 0;
+  color: #fff;
+  line-height: 1.4;
+  position: relative;
+}
+
+.intro__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.intro__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  text-transform: uppercase;
+  min-width: 250px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  font-weight: 800;
+  border-radius: 6px;
+
+  transition: 0.4s linear;
+}
+
+.btn-main {
+  background-color: #ff4655;
+}
+
+.btn-main:hover {
+  background-color: #a02b34;
+}
+
+.btn-secondary {
+  background-color: #ff4655;
+}
+
+.btn-secondary:hover {
+  background-color: #a02b34;
+}
+
+.btn-third {
+  background-color: white;
+  color: #2c2c2c;
+  z-index: 5;
+}
+
+.btn-third:hover {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.btn-four {
+  background-color: #ff4655;
+}
+
+.btn-four:hover {
+  background-color: #a02b34;
+}
+
+.osnovu_section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ece8e1;
+}
+
+.osnovu_wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.osnovu_block {
+  justify-content: center;
+  align-items: center;
+}
+
+.text_glavniy h3 {
+  text-transform: uppercase;
+  font-size: 50px;
+  padding: 0;
+  opacity: 1; /* Начальная непрозрачность элемента */
+  transform: translateX(-150px); /* Начальное смещение элемента вниз */
+  transition: opacity 0.5s ease, transform 0.7s ease;
+}
+
+.text_glavniy h3.appear {
+  opacity: 1; /* Устанавливаем полную непрозрачность элемента */
+  transform: translateY(0);
+  margin: 0;
+}
+
+.text_secondary {
+  max-width: 50%;
+  margin-top: 100px;
+}
+
+.text_secondary p {
+  font-size: 15px;
+  padding: 0;
+}
+
+.text_secondary h3 {
+  text-transform: uppercase;
+}
+
+.osnovu {
+  width: 100%;
+}
+
+.osnovu_actions {
+  max-width: 400px;
+  margin-top: 100px;
+}
+
+.osnovu_image {
+  width: 100%;
+}
+
+.osnovu_image video {
+  pointer-events: none;
+  width: 600px;
+}
+
+.osnovu_image {
+  position: relative;
+}
+
+.osnovu_image video {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Горизонтальное смещение, вертикальное смещение, размытие, цвет */
+
+  transition: all 0.3s linear; /* Плавний перехід для анімації */
+}
+
+.osnovu_image:hover .video_hover {
+  opacity: 0.85;
+}
+
+.osnovu_image:hover .video_hover p {
+  opacity: 1;
+}
+
+.video_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #111;
+  transition: opacity 0.4s ease-in 0s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Горизонтальное смещение, вертикальное смещение, размытие, цвет */
+}
+
+.video_hover p {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.3s linear; /* Плавний перехід для анімації */
+}
+
+.line {
+  width: 100%;
+  height: auto; /* Высота линии */
+  overflow: hidden; /* Обрезаем содержимое, выходящее за пределы */
+  position: relative;
+  padding-bottom: 1%;
+}
+
+.text_wrapper {
+  display: absolute;
+  width: 100%;
+  white-space: nowrap;
+
+  gap: 50px; /* Позволяет тексту находиться в одну строку без переносов */
+  animation: scrollText 15s linear infinite; /* Анимация: движение вправо, 10 секунд, линейная, бесконечное повторение */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(
+      0
+    ); /* Начальное положение за пределами видимой области справа */
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Конечное положение за пределами видимой области слева */
+  }
+}
+
+.line::after {
+  content: attr(data-text); /* Отображаем текст */
+  white-space: nowrap; /* Позволяет тексту находиться в одну строку без переносов */
+  display: inline-block; /* Делаем текст блочным, чтобы можно было применять свойство transform */
+}
+
+.moving_text {
+  display: inline-block; /* Делаем текст блочным, чтобы можно было применять свойство transform */
+  margin-right: 80px;
+  font-size: 30px;
+  font-weight: 600;
+  opacity: 0.5;
+  color: #111; /* Расстояние между текстовыми элементами */
+}
+
+.text_fon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e3e0d8;
+  font-size: 300px;
+  z-index: -2;
+  -webkit-text-stroke: 1px #bbb8b2;
+  text-stroke: 1px #bbb8b2;
+}
+
+#novosti {
+  background-color: #e4ded6;
+}
+
+.novosti_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10%;
+}
+
+.novosti_liniya {
+  border-top: 2px #494949;
+}
+
+.novosti_zagolovok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ikon {
+  transition: transform 0.2s linear;
+  transform: translateY(0);
+}
+
+.novosti_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+  transition: transform 0.5s linear;
+}
+
+.novosti_link:hover .ikon {
+  transform: scale(1.3);
+}
+
+.link_link {
+  color: #ff4655;
+  font-weight: 600;
+}
+
+.icon {
+  padding: 0;
+}
+
+.icon:hover {
+  transform: translateY(100px);
+  transform: scale(1.05);
+}
+
+.block_title {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 80px;
+  opacity: 1; /* Начальная непрозрачность элемента */
+  transform: translateY(100px); /* Начальное смещение элемента вниз */
+  transition: opacity 0.9s ease, transform 0.7s ease;
+}
+
+.block_title.appear {
+  opacity: 1; /* Устанавливаем полную непрозрачность элемента */
+  transform: translateY(0);
+}
+
+.novosti_block {
+  background-color: #1e1f2b;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-basis: 32.5%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.2s linear;
+  opacity: 0; /* Начальная непрозрачность элемента */
+  transform: translateY(100px); /* Начальное смещение элемента вниз */
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.novosti_block.appear {
+  opacity: 1; /* Устанавливаем полную непрозрачность элемента */
+  transform: translateY(0);
+}
+
+.novosti_block2 {
+  background-color: #1e1f2b;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-basis: 32.5%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.2s linear;
+  opacity: 0; /* Начальная непрозрачность элемента */
+  transform: translateY(100px); /* Начальное смещение элемента вниз */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.novosti_block2.appear {
+  opacity: 1; /* Устанавливаем полную непрозрачность элемента */
+  transform: translateY(0);
+}
+
+.novosti_block3 {
+  background-color: #1e1f2b;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-basis: 32.5%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.2s linear;
+  opacity: 0; /* Начальная непрозрачность элемента */
+  transform: translateY(100px); /* Начальное смещение элемента вниз */
+  transition: opacity 0.7s ease, transform 1s ease;
+}
+
+.novosti_block3.appear {
+  opacity: 1; /* Устанавливаем полную непрозрачность элемента */
+  transform: translateY(0);
+}
+
+.image_block {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  border-radius: 10px;
+
+  transition: transform 0.3s;
+}
+
+.novosti_block:hover .image_block {
+  transform: scale(1.05);
+}
+
+.novosti_block2:hover .image_block {
+  transform: scale(1.05);
+}
+
+.novosti_block3:hover .image_block {
+  transform: scale(1.05);
+}
+
+.text_block {
+  padding: 4%;
+}
+
+.data_title {
+  color: #afafaf;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.novost_title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  padding: 0;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.agent {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.agent_wrapper {
+  display: flex;
+  justify-content: left;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.agent_text {
+  position: relative;
+  width: 30%;
+  margin: 0;
+}
+
+.agent_text p {
+  color: white;
+  font-size: 15px;
+  padding: 0;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.agent_zogolovok_title {
+  color: #f1f1f1;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 0px;
+  margin-bottom: 80px;
+  z-index: 2;
+  opacity: 1; /* Начальная непрозрачность элемента */
+  transform: translateX(-150px); /* Начальное смещение элемента вниз */
+  transition: opacity 0.5s ease, transform 0.7s ease;
+}
+
+.agent_zogolovok_title.appear {
+  opacity: 1; /* Устанавливаем полную непрозрачность элемента */
+  transform: translateY(0);
+}
+
+.agent_actions {
+  max-width: 400px;
+  margin-top: 70px;
+}
+.agent_image {
+  margin-left: 10%;
+
+  z-index: 2;
+  transition: all 0.2s linear;
+}
+
+.agent_image:hover {
+  transform: scale(1.01);
+}
+
+.agent_image img {
+  width: 100%;
+}
+
+.maps {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.maps_wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+}
+
+.maps_zogolovok_title {
+  color: #f1f1f1;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 80px;
+  opacity: 1; /* Начальная непрозрачность элемента */
+  transform: translateX(-150px); /* Начальное смещение элемента вниз */
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.maps_zogolovok_title.appear {
+  opacity: 1; /* Устанавливаем полную непрозрачность элемента */
+  transform: translateY(0);
+}
+
+.maps_text p {
+  color: white;
+  font-size: 15px;
+  padding: 0;
+  font-weight: 500;
+}
+
+.maps_text_secondary {
+}
+
+.maps_text {
+  width: 30%;
+  padding-top: 18%;
+  padding-bottom: 18%;
+}
+
+.maps_actions {
+  max-width: 400px;
+  margin-top: 70px;
+}
+
+.weapon_wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.weapon_text {
+  max-width: 30%;
+}
+
+.weapon_text p {
+  font-size: 15px;
+  padding: 0;
+  font-weight: 500;
+}
+
+.weapon_zagolovok_title {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 80px;
+  z-index: 2;
+  opacity: 1; /* Начальная непрозрачность элемента */
+  transform: translateX(-150px); /* Начальное смещение элемента вниз */
+  transition: opacity 0.5s ease, transform 0.7s ease;
+}
+
+.weapon_zagolovok_title.appear {
+  opacity: 1; /* Устанавливаем полную непрозрачность элемента */
+  transform: translateY(0);
+}
+
+.weapon_actions {
+  max-width: 400px;
+  margin-top: 70px;
+}
+
+.weapon_weapon {
+  align-items: right;
+}
+
+.weapon_spectre {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_bulldog {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_bucky {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_vandal {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_operator {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_spectre:hover {
+  transform: scale(1.04);
+}
+
+.weapon_bulldog:hover {
+  transform: scale(1.04);
+}
+
+.weapon_bucky:hover {
+  transform: scale(1.04);
+}
+
+.weapon_vandal:hover {
+  transform: scale(1.04);
+}
+
+.weapon_operator:hover {
+  transform: scale(1.04);
+}
+
+.weapon_weapon2 {
+  margin-left: 200px;
+  margin-right: 150px;
+  margin-top: 3px;
+}
+
+.weapon_sheriff {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_ghost {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_shorty {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_stinger {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_marshal {
+  width: 350px;
+  transition: all 0.2s linear;
+}
+
+.weapon_sheriff:hover {
+  transform: scale(1.04);
+}
+
+.weapon_ghost:hover {
+  transform: scale(1.04);
+}
+
+.weapon_shorty:hover {
+  transform: scale(1.04);
+}
+
+.weapon_stinger:hover {
+  transform: scale(1.04);
+}
+
+.weapon_marshal:hover {
+  transform: scale(1.04);
+}
+
+.footer {
+  background-color: #111;
+  height: 100%;
+  top: 0;
+  padding-top: 50px;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.footer_block {
+  display: flex;
+}
+
+.nav-footer {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-footer .nav-text {
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+.footer_block_copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #505050;
+}
+
+.footer_block_copyright p {
+  color: #f1f1f1;
+  font-size: 13px;
+}
+
+.footer_block_text p {
+  color: #f1f1f1;
+  font-size: 8px;
+}
+
+@media (min-width: 2000px) {
+  .container,
+  .containerr,
+  .containerrr {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .container,
+  .containerr,
+  .containerrr {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container,
+  .containerr,
+  .containerrr {
+    width: 950px;
+  }
+
+  .nav {
+  }
+
+  .nav-text {
+    font-size: 12px;
+  }
+
+  .profile {
+    margin-left: 10px;
+  }
+
+  .osnovu_image video {
+    width: 420px;
+    height: 175px;
+  }
+
+  .osnovu_image:hover video {
+    transform: none; /* Зміщення вгору та вліво на 2% */
+    box-shadow: none;
+  }
+
+  .novosti_block {
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-text {
+    font-size: 10px;
+  }
+
+  .intro {
+    margin-bottom: 0;
+  }
+
+  .intro::before {
+    margin-bottom: 0;
+  }
+
+  .intro::after {
+    margin-bottom: 0;
+  }
+
+  .intro__block {
+  }
+
+  .intro__title {
+    font-size: 90px;
+  }
+
+  .intro__text {
+    font-size: 10px;
+  }
+
+  .osnobvu_glavniy_text {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .btn {
+    max-width: 200px;
+    height: 50px;
+    font-size: 10px;
+  }
+
+  .text_glavniy h3 {
+    font-size: 45px;
+  }
+
+  .container,
+  .containerr,
+  .containerrr {
+    width: 80%;
+  }
+
+  .novosti_zagolovok {
+    display: block;
+  }
+
+  .novosti_wrapper {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .novosti_link {
+  }
+
+  .novosti_block {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .novosti_block2 {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+
+    margin-bottom: 30px;
+  }
+
+  .novosti_block3 {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .link_link {
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-left: 35px;
+  }
+
+  .block_title {
+    margin-bottom: 30px;
+  }
+
+  .agent_wrapper {
+    width: 100%;
+  }
+
+  .agent_text {
+    width: 60%;
+  }
+
+  .agent_text p {
+    width: 100%;
+  }
+
+  .osnovu_actions {
+    margin-bottom: 50px;
+  }
+
+  .osnovu_image {
+    display: none;
+  }
+
+  .maps_text {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container,
+  .containerr,
+  .containerrr {
+    width: 90%;
+  }
+
+  .header {
+    height: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    left: -100%;
+    top: 0;
+    padding-top: 100px;
+    overflow: auto;
+    box-sizing: border-box;
+    transition: left 0.3s ease 0s;
+  }
+
+  .nav::before {
+    content: "";
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 55px;
+    background-color: #111;
+    z-index: 2;
+    transition: left 0.3s ease 0s;
+  }
+
+  .avt,
+  .reg {
+    display: block;
+    color: #fd6a76;
+  }
+
+  .avt:hover,
+  .reg:hover {
+    color: #fff;
+  }
+
+  .nav-text {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2.5;
+  }
+
+  .logo {
+    z-index: 5;
+  }
+
+  .right-nav {
+    z-index: 10;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    z-index: 50;
+    flex: 0 0 30px;
+    height: 16px;
+    margin-left: 15px;
+  }
+
+  .burger span,
+  .burger::before,
+  .burger::after {
+    content: "";
+    right: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger::before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger span {
+    top: calc(50% - 1px);
+  }
+
+  .menu-open .burger span {
+    width: 0;
+  }
+
+  .menu-open .burger::before {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+
+  .menu-open .burger::after {
+    bottom: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+
+  .menu-open .nav,
+  .menu-open .nav::before {
+    left: 0;
+  }
+
+  .menu-open body {
+    overflow: hidden;
+  }
+
+  .intro__wrapper {
+    height: auto;
+  }
+
+  .intro__block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .intro__text {
+    font-size: 200px;
+  }
+
+  .btn {
+    min-width: 280px;
+    height: 70px;
+    font-size: 12.5px;
+  }
+
+  .novosti_block {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .novosti_block2 {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .novosti_block3 {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .agent_image {
+    display: none;
+  }
+
+  .weapon_weapon .weapon_weapon2 {
+    display: none;
+  }
+
+  .weapon_text p {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container,
+  .containerr,
+  .containerrr {
+    width: 90%;
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .nav {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .intro__wrapper {
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .intro__text {
+    font-size: 10px;
+  }
+
+  .intro__title {
+    font-size: 50px;
+  }
+
+  .btn {
+    min-width: 90%;
+    height: 60px;
+    font-size: 10.5px;
+  }
+
+  .osnovu_actions {
+    max-width: 260px;
+    margin-left: 0;
+  }
+
+  .text_glavniy h3 {
+    font-size: 29px;
+    margin-left: 0;
+  }
+
+  .text_secondary {
+    max-width: 260px;
+    margin-left: 0;
+    margin-top: 70px;
+  }
+
+  .text_secondary h3 {
+    font-size: 17px;
+    margin-left: 0;
+  }
+
+  .text_secondary p {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .novosti_zagolovok {
+    max-width: 260px;
+    margin-left: 0;
+  }
+
+  .block_title {
+    font-size: 29px;
+    margin-left: 0;
+  }
+
+  .link_link {
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  .novosti_block {
+    height: auto;
+  }
+
+  .novosti_block2 {
+    height: auto;
+  }
+
+  .novosti_block3 {
+    height: auto;
+  }
+
+  .agent_text {
+    max-width: 260px;
+  }
+
+  .agent_zogolovok_title {
+    font-size: 29px;
+    margin-left: 0;
+  }
+
+  .agent_text p {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .agent_actions {
+    max-width: 260px;
+    margin-left: 0;
+  }
+
+  .maps_text {
+    max-width: 260px;
+  }
+
+  .maps_zogolovok_title {
+    font-size: 29px;
+    margin-left: 0;
+  }
+
+  .maps_text_secondary p {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .maps_actions {
+    max-width: 260px;
+    margin-left: 0;
+  }
+
+  .weapon_text {
+    min-width: 260px;
+    max-width: 260px;
+  }
+
+  .weapon_zagolovok_title {
+    font-size: 29px;
+    margin-left: 0;
+  }
+
+  .weapon_text p {
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  .weapon_actions {
+    min-width: 260px;
+    max-width: 260px;
+    margin-left: 0;
+  }
+
+  .weapon_weapon .weapon_weapon2 {
+    display: none;
+  }
+
+  .logo_footer {
+    display: none;
+  }
+
+  .nav-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-footer a {
+    font-size: 10px;
+  }
+
+  .footer_block_copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer_block_copyright p {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container,
+  .containerr,
+  .containerrr {
+    width: 90%;
+  }
+
+  .intro__wrapper {
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .intro__text {
+    font-size: 6px;
+  }
+
+  .intro__title {
+    font-size: 31.6px;
+  }
+
+  .btn {
+    min-width: 90%;
+    height: 35px;
+    font-size: 6.5px;
+  }
+
+  .osnovu {
+    margin-left: 0;
+  }
+
+  .osnovu_wrapper {
+    width: 100%;
+  }
+
+  .osnovu_actions {
+    max-width: 160px;
+    margin-left: 0;
+  }
+
+  .text_glavniy h3 {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .text_secondary {
+    max-width: 160px;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .text_secondary h3 {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .text_secondary p {
+    margin-left: 0;
+    font-size: 9px;
+  }
+
+  .novosti_zagolovok {
+    max-width: 160px;
+    margin-left: 0;
+  }
+
+  .block_title {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .novosti_link {
+    width: 100%;
+  }
+
+  .link_link {
+    font-size: 11px;
+    margin-left: 0;
+  }
+
+  .ikon {
+    display: none;
+  }
+
+  .novosti_wrapper {
+  }
+
+  .novosti_block {
+    height: auto;
+  }
+
+  .novosti_block2 {
+    height: auto;
+  }
+
+  .novosti_block3 {
+    height: auto;
+  }
+
+  .data_title {
+    font-size: 12px;
+  }
+
+  .novost_title {
+    font-size: 8px;
+  }
+
+  .agent_text {
+    max-width: 160px;
+  }
+
+  .agent_zogolovok_title {
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+  .agent_text p {
+    margin-left: 0;
+    font-size: 11px;
+  }
+
+  .agent_actions {
+    max-width: 160px;
+    margin-left: 0;
+  }
+
+  .maps_text {
+    max-width: 160px;
+  }
+
+  .maps_zogolovok_title {
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+  .maps_text_secondary p {
+    margin-left: 0;
+    font-size: 11px;
+  }
+
+  .maps_actions {
+    max-width: 160px;
+    margin-left: 0;
+  }
+
+  .weapon_text {
+    min-width: 160px;
+    max-width: 160px;
+  }
+
+  .weapon_zagolovok_title {
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+  .weapon_text p {
+    font-size: 11px;
+    margin-left: 0;
+  }
+
+  .weapon_actions {
+    min-width: 160px;
+    max-width: 160px;
+    margin-left: 0;
+  }
+
+  .weapon_weapon .weapon_weapon2 {
+    display: none;
+  }
+
+  .logo_footer {
+    display: none;
+  }
+
+  .nav-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-footer a {
+    font-size: 9px;
+  }
+
+  .footer_block_copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer_block_copyright p {
+    font-size: 6px;
+  }
+}
